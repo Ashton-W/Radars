@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pnd-ei-ciw">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMI-mo-UaS">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-j9-Lyb">
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text field that will be focused after TouchID." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jhf-ky-sEA">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="7hx-4K-5Ez"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbH-0U-gfM">
+                                                        <state key="normal" title="Show TouchID Prompt"/>
+                                                        <connections>
+                                                            <action selector="didPressStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUS-gC-URm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5X-Dj-7Mo">
+                                                        <string key="text">With the keyboard dismissed, show the Touch ID prompt. Press Cancel on the Touch ID prompt.
+The text field will become first responder which should show the keyboard. The keyboard is shown, but it is not visible, typing where the keyboard is expected to be positioned will enter text into the text field.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="JZj-00-DKs">
+                                                        <connections>
+                                                            <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="k3Y-i7-0pz"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cM6-53-4bk">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SY0-a1-Xzk">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="65" id="tpG-fh-Uf3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        <connections>
+                                                            <action selector="inputValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kN2-nD-8WE"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="e5X-Dj-7Mo" firstAttribute="top" secondItem="JbH-0U-gfM" secondAttribute="bottom" constant="32" id="2I4-93-tHd"/>
+                                                    <constraint firstItem="JbH-0U-gfM" firstAttribute="centerX" secondItem="jhf-ky-sEA" secondAttribute="centerX" id="5Me-2J-Ecb"/>
+                                                    <constraint firstItem="jhf-ky-sEA" firstAttribute="centerX" secondItem="dDL-j9-Lyb" secondAttribute="centerX" id="GDJ-Hb-i2l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="e5X-Dj-7Mo" secondAttribute="trailing" constant="20" id="Mlx-cF-kpS"/>
+                                                    <constraint firstItem="SY0-a1-Xzk" firstAttribute="leading" secondItem="cM6-53-4bk" secondAttribute="trailing" constant="8" id="NIr-hj-cQZ"/>
+                                                    <constraint firstItem="JZj-00-DKs" firstAttribute="leading" secondItem="SY0-a1-Xzk" secondAttribute="trailing" constant="8" id="Ojc-sL-B1n"/>
+                                                    <constraint firstItem="JZj-00-DKs" firstAttribute="top" secondItem="e5X-Dj-7Mo" secondAttribute="bottom" constant="20" id="Qhb-ZN-gVY"/>
+                                                    <constraint firstItem="jhf-ky-sEA" firstAttribute="top" secondItem="dDL-j9-Lyb" secondAttribute="top" constant="20" id="StJ-IN-ohA"/>
+                                                    <constraint firstItem="jhf-ky-sEA" firstAttribute="centerX" secondItem="dDL-j9-Lyb" secondAttribute="centerX" id="UFQ-0p-1tG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jhf-ky-sEA" secondAttribute="trailing" constant="20" id="UWT-5t-W1d"/>
+                                                    <constraint firstItem="cM6-53-4bk" firstAttribute="centerY" secondItem="JZj-00-DKs" secondAttribute="centerY" id="Wdo-Me-CBd"/>
+                                                    <constraint firstItem="e5X-Dj-7Mo" firstAttribute="leading" secondItem="dDL-j9-Lyb" secondAttribute="leading" constant="20" id="Xcn-eN-LON"/>
+                                                    <constraint firstItem="SY0-a1-Xzk" firstAttribute="centerY" secondItem="JZj-00-DKs" secondAttribute="centerY" id="bHT-ag-Wby"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JZj-00-DKs" secondAttribute="bottom" constant="20" id="kgo-kC-ZxD"/>
+                                                    <constraint firstItem="jhf-ky-sEA" firstAttribute="leading" secondItem="dDL-j9-Lyb" secondAttribute="leading" constant="20" id="mah-ZN-97Q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JZj-00-DKs" secondAttribute="trailing" constant="20" id="u5A-pL-WHj"/>
+                                                    <constraint firstItem="JbH-0U-gfM" firstAttribute="top" secondItem="jhf-ky-sEA" secondAttribute="bottom" constant="20" id="uWX-Ug-m6f"/>
+                                                    <constraint firstItem="cM6-53-4bk" firstAttribute="leading" secondItem="dDL-j9-Lyb" secondAttribute="leading" constant="20" id="yph-vw-VvQ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="490" placeholder="YES" id="C1L-MG-Ne7"/>
+                                            <constraint firstItem="dDL-j9-Lyb" firstAttribute="top" secondItem="OMI-mo-UaS" secondAttribute="top" id="CkV-TO-c6a"/>
+                                            <constraint firstAttribute="trailing" secondItem="dDL-j9-Lyb" secondAttribute="trailing" id="TX3-fE-vlh"/>
+                                            <constraint firstAttribute="bottom" secondItem="dDL-j9-Lyb" secondAttribute="bottom" id="eHF-D8-DwP"/>
+                                            <constraint firstItem="dDL-j9-Lyb" firstAttribute="leading" secondItem="OMI-mo-UaS" secondAttribute="leading" id="ibc-87-OM3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OMI-mo-UaS" secondAttribute="trailing" id="1xc-aQ-X1e"/>
+                                    <constraint firstItem="OMI-mo-UaS" firstAttribute="leading" secondItem="pnd-ei-ciw" secondAttribute="leading" id="4Y0-av-S6c"/>
+                                    <constraint firstAttribute="bottom" secondItem="OMI-mo-UaS" secondAttribute="bottom" id="Xqb-ry-gp4"/>
+                                    <constraint firstItem="OMI-mo-UaS" firstAttribute="top" secondItem="pnd-ei-ciw" secondAttribute="top" id="owr-Oo-AoI"/>
+                                </constraints>
+                            </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-ul-c7w">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMr-jG-i3u">
+                                        <string key="text">Keyboard should be here.
+You can still type!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LMr-jG-i3u" firstAttribute="centerY" secondItem="yPn-ul-c7w" secondAttribute="centerY" id="7UU-LA-ecT"/>
+                                    <constraint firstAttribute="height" constant="64" id="Dp8-Op-bcS"/>
+                                    <constraint firstItem="LMr-jG-i3u" firstAttribute="centerX" secondItem="yPn-ul-c7w" secondAttribute="centerX" id="RbK-NF-FOB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pnd-ei-ciw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bor-rb-6eQ"/>
+                            <constraint firstItem="yPn-ul-c7w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ntc-nd-KHW"/>
+                            <constraint firstAttribute="trailing" secondItem="yPn-ul-c7w" secondAttribute="trailing" id="S2j-tK-7zK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yPn-ul-c7w" secondAttribute="bottom" id="Zik-PB-Dua"/>
+                            <constraint firstAttribute="trailing" secondItem="pnd-ei-ciw" secondAttribute="trailing" id="aYf-Bw-PLR"/>
+                            <constraint firstItem="OMI-mo-UaS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="edn-pY-4av"/>
+                            <constraint firstItem="yPn-ul-c7w" firstAttribute="top" secondItem="pnd-ei-ciw" secondAttribute="bottom" id="hNz-gq-j14"/>
+                            <constraint firstItem="pnd-ei-ciw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="q4o-Dy-Lk9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="delaySlider" destination="JZj-00-DKs" id="vBe-le-V8u"/>
+                        <outlet property="inputAccessory" destination="B4E-uf-TdS" id="DVv-io-12h"/>
+                        <outlet property="keyboardShadowView" destination="yPn-ul-c7w" id="qNH-Qu-jPD"/>
+                        <outlet property="keyboardShadowViewHeight" destination="Dp8-Op-bcS" id="asS-PQ-P1L"/>
+                        <outlet property="sliderValueField" destination="SY0-a1-Xzk" id="Dgk-rk-1mG"/>
+                        <outlet property="textField" destination="jhf-ky-sEA" id="Ljg-Po-iBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="hNo-qW-7Hb">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BC-iX-GBQ">
+                            <frame key="frameInset" minX="194" minY="1" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Done"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="B4E-uf-TdS">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vs4-d7-HHF"/>
+                        <barButtonItem style="done" systemItem="done" id="pI1-8L-owj">
+                            <connections>
+                                <action selector="didTapDone:" destination="BYZ-38-t0r" id="kNT-5f-CXh"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="1116" y="220"/>
+        </scene>
+    </scenes>
+</document>
