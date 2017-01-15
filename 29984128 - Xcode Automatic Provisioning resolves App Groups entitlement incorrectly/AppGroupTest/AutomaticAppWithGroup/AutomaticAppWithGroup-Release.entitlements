@@ -6,5 +6,9 @@
 	<array>
 		<string>group.net.Ashton-W.AppGroupTest-Release.AppGroup</string>
 	</array>
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)net.Ashton-W.AppGroupTest-Release.Keychain</string>
+    </array>
 </dict>
 </plist>

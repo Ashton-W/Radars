@@ -10,8 +10,14 @@
 {
     #pragma mark Add AppGroups here
     NSArray *appGroups = @[
+                           @"net.Ashton-W.AppGroupTest-Debug.AppGroup",
+                           @"net.Ashton-W.AppGroupTest-Release.AppGroup",
+                           @"net.Ashton-W.AppGroupTest.ManualApp-Debug",
+                           @"net.Ashton-W.AppGroupTest.ManualApp-Release",
                            @"group.net.Ashton-W.AppGroupTest-Debug.AppGroup",
-                           @"group.net.Ashton-W.AppGroupTest-Release.AppGroup"
+                           @"group.net.Ashton-W.AppGroupTest-Release.AppGroup",
+                           @"group.net.Ashton-W.AppGroupTest.ManualApp-Debug",
+                           @"group.net.Ashton-W.AppGroupTest.ManualApp-Release"
                            ];
     
     self.window = [[UIWindow alloc] init];

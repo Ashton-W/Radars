@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		460EA27E1E27274B00911790 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D9B5B51E27027F00F6CE72 /* main.m */; };
 		460EA2801E27276B00911790 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 460EA27F1E27275E00911790 /* README.md */; };
+		461DD4F81E2A20D500E85777 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461DD4F71E2A20D500E85777 /* Launch Screen.storyboard */; };
+		461DD4F91E2A20D500E85777 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461DD4F71E2A20D500E85777 /* Launch Screen.storyboard */; };
+		461DD4FA1E2A20D500E85777 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461DD4F71E2A20D500E85777 /* Launch Screen.storyboard */; };
+		461DD5161E2A223000E85777 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D9B5B51E27027F00F6CE72 /* main.m */; };
+		461DD5171E2A223400E85777 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461DD4F71E2A20D500E85777 /* Launch Screen.storyboard */; };
+		461DD51A1E2C308100E85777 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 461DD5191E2C307500E85777 /* README.md */; };
 		466E45D51E272597005CE203 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46D9B5B81E2702C200F6CE72 /* README.md */; };
 		466E45D61E27259D005CE203 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46D9B5D51E2704D100F6CE72 /* README.md */; };
 		46D9B5B71E27027F00F6CE72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D9B5B51E27027F00F6CE72 /* main.m */; };
@@ -19,7 +25,12 @@
 		460EA2671E27273100911790 /* AutomaticAppWithExpandedAppGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomaticAppWithExpandedAppGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		460EA27A1E27273100911790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		460EA27F1E27275E00911790 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		460EA2811E27277100911790 /* AutomaticAppWithExpandedAppGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutomaticAppWithExpandedAppGroup.entitlements; sourceTree = "<group>"; };
+		460EA2811E27277100911790 /* AutomaticAppWithExpandedAppGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutomaticAppWithExpandedAppGroup.entitlements; sourceTree = "<group>"; usesTabs = 1; };
+		461DD4F71E2A20D500E85777 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		461DD4FF1E2A221500E85777 /* ManualApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManualApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		461DD5121E2A221500E85777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461DD5181E2A226E00E85777 /* ManualApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ManualApp.entitlements; sourceTree = "<group>"; };
+		461DD5191E2C307500E85777 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46D9B59D1E27023B00F6CE72 /* AutomaticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomaticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D9B5B01E27023B00F6CE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D9B5B51E27027F00F6CE72 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -29,10 +40,18 @@
 		46D9B5D51E2704D100F6CE72 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46D9B5D91E270E2400F6CE72 /* AutomaticAppWithGroup-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AutomaticAppWithGroup-Debug.entitlements"; sourceTree = "<group>"; };
 		46D9B5DA1E270E2400F6CE72 /* AutomaticAppWithGroup-Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AutomaticAppWithGroup-Release.entitlements"; sourceTree = "<group>"; };
+		46EFFE1C1E285C0D005456AC /* AutomaticApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutomaticApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		460EA2641E27273100911790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461DD4FC1E2A221500E85777 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,6 +85,16 @@
 			path = AutomaticAppWithExpandedAppGroup;
 			sourceTree = "<group>";
 		};
+		461DD5001E2A221500E85777 /* ManualApp */ = {
+			isa = PBXGroup;
+			children = (
+				461DD5181E2A226E00E85777 /* ManualApp.entitlements */,
+				461DD5121E2A221500E85777 /* Info.plist */,
+				461DD5191E2C307500E85777 /* README.md */,
+			);
+			path = ManualApp;
+			sourceTree = "<group>";
+		};
 		46D9B5711E260CE500F6CE72 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +102,7 @@
 				46D9B59E1E27023B00F6CE72 /* AutomaticApp */,
 				46D9B5BE1E2704B200F6CE72 /* AutomaticAppWithGroup */,
 				460EA2681E27273100911790 /* AutomaticAppWithExpandedAppGroup */,
+				461DD5001E2A221500E85777 /* ManualApp */,
 				46D9B57B1E260CE500F6CE72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +113,7 @@
 				46D9B59D1E27023B00F6CE72 /* AutomaticApp.app */,
 				46D9B5BD1E2704B200F6CE72 /* AutomaticAppWithGroup.app */,
 				460EA2671E27273100911790 /* AutomaticAppWithExpandedAppGroup.app */,
+				461DD4FF1E2A221500E85777 /* ManualApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +123,7 @@
 			children = (
 				46D9B5B01E27023B00F6CE72 /* Info.plist */,
 				46D9B5B81E2702C200F6CE72 /* README.md */,
+				46EFFE1C1E285C0D005456AC /* AutomaticApp.entitlements */,
 			);
 			path = AutomaticApp;
 			sourceTree = "<group>";
@@ -100,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				46D9B5B51E27027F00F6CE72 /* main.m */,
+				461DD4F71E2A20D500E85777 /* Launch Screen.storyboard */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -133,6 +166,23 @@
 			name = AutomaticAppWithExpandedAppGroup;
 			productName = AutomaticAppWithExpandedAppGroup;
 			productReference = 460EA2671E27273100911790 /* AutomaticAppWithExpandedAppGroup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		461DD4FE1E2A221500E85777 /* ManualApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 461DD5131E2A221500E85777 /* Build configuration list for PBXNativeTarget "ManualApp" */;
+			buildPhases = (
+				461DD4FB1E2A221500E85777 /* Sources */,
+				461DD4FC1E2A221500E85777 /* Frameworks */,
+				461DD4FD1E2A221500E85777 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ManualApp;
+			productName = ManualApp;
+			productReference = 461DD4FF1E2A221500E85777 /* ManualApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		46D9B59C1E27023B00F6CE72 /* AutomaticApp */ = {
@@ -186,12 +236,33 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					461DD4FE1E2A221500E85777 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NRQNN5J5U8;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 						};
 					};
 					46D9B59C1E27023B00F6CE72 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = NRQNN5J5U8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					46D9B5BC1E2704B200F6CE72 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -227,6 +298,7 @@
 				46D9B59C1E27023B00F6CE72 /* AutomaticApp */,
 				46D9B5BC1E2704B200F6CE72 /* AutomaticAppWithGroup */,
 				460EA2661E27273100911790 /* AutomaticAppWithExpandedAppGroup */,
+				461DD4FE1E2A221500E85777 /* ManualApp */,
 			);
 		};
 /* End PBXProject section */
@@ -236,7 +308,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461DD4FA1E2A20D500E85777 /* Launch Screen.storyboard in Resources */,
 				460EA2801E27276B00911790 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461DD4FD1E2A221500E85777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461DD51A1E2C308100E85777 /* README.md in Resources */,
+				461DD5171E2A223400E85777 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461DD4F81E2A20D500E85777 /* Launch Screen.storyboard in Resources */,
 				466E45D51E272597005CE203 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461DD4F91E2A20D500E85777 /* Launch Screen.storyboard in Resources */,
 				466E45D61E27259D005CE203 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +348,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				460EA27E1E27274B00911790 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461DD4FB1E2A221500E85777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461DD5161E2A223000E85777 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +381,6 @@
 		460EA27B1E27273100911790 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AutomaticAppWithExpandedAppGroup/AutomaticAppWithExpandedAppGroup.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NRQNN5J5U8;
 				INFOPLIST_FILE = AutomaticAppWithExpandedAppGroup/Info.plist;
@@ -302,13 +393,38 @@
 		460EA27C1E27273100911790 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AutomaticAppWithExpandedAppGroup/AutomaticAppWithExpandedAppGroup.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = NRQNN5J5U8;
 				INFOPLIST_FILE = AutomaticAppWithExpandedAppGroup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Ashton-W.AppGroupTest.AutomaticAppWithExpandedAppGroup-$(CONFIGURATION)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		461DD5141E2A221500E85777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ManualApp/ManualApp.entitlements;
+				DEVELOPMENT_TEAM = NRQNN5J5U8;
+				INFOPLIST_FILE = ManualApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Ashton-W.AppGroupTest.ManualApp-$(CONFIGURATION)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "AppGroupTest ManualApp Debug";
+			};
+			name = Debug;
+		};
+		461DD5151E2A221500E85777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ManualApp/ManualApp.entitlements;
+				DEVELOPMENT_TEAM = NRQNN5J5U8;
+				INFOPLIST_FILE = ManualApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Ashton-W.AppGroupTest.ManualApp-$(CONFIGURATION)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "AppGroupTest ManualApp Release";
 			};
 			name = Release;
 		};
@@ -407,6 +523,7 @@
 		46D9B5B21E27023B00F6CE72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutomaticApp/AutomaticApp.entitlements;
 				DEVELOPMENT_TEAM = NRQNN5J5U8;
 				INFOPLIST_FILE = AutomaticApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,6 +535,7 @@
 		46D9B5B31E27023B00F6CE72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutomaticApp/AutomaticApp.entitlements;
 				DEVELOPMENT_TEAM = NRQNN5J5U8;
 				INFOPLIST_FILE = AutomaticApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -461,6 +579,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		461DD5131E2A221500E85777 /* Build configuration list for PBXNativeTarget "ManualApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461DD5141E2A221500E85777 /* Debug */,
+				461DD5151E2A221500E85777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		46D9B5751E260CE500F6CE72 /* Build configuration list for PBXProject "AppGroupTest" */ = {
 			isa = XCConfigurationList;
