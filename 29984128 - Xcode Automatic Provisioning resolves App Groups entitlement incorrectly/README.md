@@ -27,15 +27,15 @@ Sometimes Xcode will not attempt to repair the App ID, and simply fail the build
 
 DEVELOPMENT_TEAM, PRODUCT_BUNDLE_IDENTIFIER, and the App Groups may need to be adjusted to your Development Team.
 
- 1. You can skip configuration steps if you open the project in the attached zip file.
- 2. Create an Xcode project with an iOS App target
- 3. Append the PRODUCT_BUNDLE_IDENTIFIER Build Setting with "-$(CONFIGURATION)", this will give different values for Debug and Release configurations. (AutomaticApp in the sample project)
- 4. Enable Automatic Provisioning and set your Development Team for the target.
- 5. Notice Xcode resolving the Provisioning Profiles correctly
- 6. Add the App Groups capability to the app target, this will create an entitlements file.
- 7. Edit the entitlements file to expand the CONFIGURATION build setting to have a different App Group per Configuration. For example use the string "group.net.Ashton-W.AppGroupTest-$(CONFIGURATION).AppGroup" in the entitlements file. (AutomaticAppWithExpandedAppGroup in the sample project)
- 8. Build the app for Debug, eg: Run in Simulator.
- 9. Then build the app for Release: eg: Archive for Generic iOS Device.
+1. You can skip configuration steps if you open the project in the attached zip file.
+2. Create an Xcode project with an iOS App target
+3. Append the PRODUCT_BUNDLE_IDENTIFIER Build Setting with "-$(CONFIGURATION)", this will give different values for Debug and Release configurations. (AutomaticApp in the sample project)
+4. Enable Automatic Provisioning and set your Development Team for the target.
+5. Notice Xcode resolving the Provisioning Profiles correctly
+6. Add the App Groups capability to the app target, this will create an entitlements file.
+7. Edit the entitlements file to expand the CONFIGURATION build setting to have a different App Group per Configuration. For example use the string "group.net.Ashton-W.AppGroupTest-$(CONFIGURATION).AppGroup" in the entitlements file. (AutomaticAppWithExpandedAppGroup in the sample project)
+8. Build the app for Debug, eg: Run in Simulator.
+9. Then build the app for Release: eg: Archive for Generic iOS Device.
 10. Notice the App Groups assigned to the App IDs in the Developer Portal (Go to 'Certificates, Identifiers & Profiles'. Then go to 'App IDs' under the 'Identifiers' group in the navigation menu. Select the App IDs matching the bundle IDs we are using in this project, then press the edit button. Press the Edit button next to the App Groups entitlement.)
 11. Repeat Step 8 and 10, then Step 9 and 10.
 12. Revert the changes in step #7
